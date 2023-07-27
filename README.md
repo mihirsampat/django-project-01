@@ -2,6 +2,7 @@
 django-project-01
 
 ## Future Tasks
+- [ ] Add auto formatting
 - [ ] Connect to postgres database
 - [ ] Host it on a server
   - [ ] Find a service to host django application for free
