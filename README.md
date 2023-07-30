@@ -2,7 +2,7 @@
 django-project-01
 
 ## Future Tasks
-- [ ] Add auto formatting
+- [x] Add auto formatting
 - [ ] Connect to postgres database
 - [ ] Host it on a server
   - [ ] Find a service to host django application for free
@@ -14,6 +14,7 @@ django-project-01
 
 ## Commands
 
+### Django
 After making changes to the `models.py` file run the following commands
 
 ```bat
@@ -29,6 +30,24 @@ To run the APIs run the following command
 ```bat
 python manage.py runserver
 ```
+
+### Pre-commit
+To auto-update the hooks
+```
+pre-commit autoupdate
+```
+
+To install pre-commit
+```
+pre-commit install
+```
+
+to run pre-commit on all files
+```
+pre-commit run --all-files
+```
+
+To skip a line add `# nosec` at the end of the line
 
 ## Log
 
