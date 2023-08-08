@@ -4,6 +4,7 @@ django-project-01
 ## Future Tasks
 - [x] Add auto formatting
 - [x] Connect to postgres database
+- [x] Create requiremen.txt
 - [ ] Host it on a server
   - [ ] Find a service to host django application for free
   - [ ] Host the application on the server
@@ -11,6 +12,7 @@ django-project-01
   - [ ] Add date and time at which the task needs to be done
   - [ ] Add notification
 - [ ] Connect the django application to a react frontend
+- [ ] Postman integration
 
 ## Commands
 
@@ -48,6 +50,13 @@ pre-commit run --all-files
 ```
 
 To skip a line add `# nosec` at the end of the line
+
+### Update `requirement.txt`
+
+To update the `requirement.txt` for the project run the following command
+```shell
+pipreqs todo
+```
 
 ## Log
 
@@ -91,6 +100,21 @@ To skip a line add `# nosec` at the end of the line
 	python manage.py runserver
 	```
 
+### How we created `requirement.txt`?
+
+First we installed the library `pipreqs` using the following command
+
+```shell
+pip install pipreqs
+```
+
+**Why not `pip freeze`?**
+The benefits of `pipreqs` from it's `GitHub`
+> ### Why not pip freeze?
+> * `pip freeze` only saves the packages that are installed with `pip` install in your environment.
+> * `pip freeze` saves all packages in the environment including those that you don't use in your current project (if you don't have virtualenv).
+> * and sometimes you just need to create `requirements.txt` for a new project without installing modules.
+
 ## Reference
 1. https://blog.logrocket.com/django-rest-framework-create-api/#what-is-rest-api - Starting reference for the project
 2. Precommit
@@ -101,3 +125,4 @@ To skip a line add `# nosec` at the end of the line
 3. Database
 	1. https://www.guru99.com/download-install-postgresql.html - Download Postgres
 	2. https://www.w3schools.com/django/django_db_connect.php - Update Django settings
+4. https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt - Requirement
